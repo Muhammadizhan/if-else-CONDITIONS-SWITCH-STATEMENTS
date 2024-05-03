@@ -176,3 +176,42 @@
 // }
 
 // Question -12
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+// document.getElementById("greeting").textContent = greeting;
+
+//Question -13
+// function compareIntegers() {
+//   var firstInteger = parseInt(document.getElementById("firstInteger").value);
+//   var secondInteger = parseInt(document.getElementById("secondInteger").value);
+//   var resultElement = document.getElementById("result");
+
+//   if (firstInteger > secondInteger) {
+//     resultElement.textContent = "The larger integer is: " + firstInteger;
+//   } else if (firstInteger < secondInteger) {
+//     resultElement.textContent = "The larger integer is: " + secondInteger;
+//   } else {
+//     resultElement.textContent = "Both integers are equal: " + firstInteger;
+//   }
+// }
+
+// Question -14
+// function checkNumber() {
+//   var number = parseFloat(document.getElementById("numberInput").value);
+//   var resultElement = document.getElementById("result");
+
+//   if (number > 0) {
+//     resultElement.textContent = "The number is positive.";
+//   } else if (number < 0) {
+//     resultElement.textContent = "The number is negative.";
+//   } else {
+//     resultElement.textContent = "The number is zero.";
+//   }
+// }
+
+// Question -15
