@@ -103,30 +103,76 @@
 
 //   document.getElementById("result").innerHTML = result;
 // }
+
 // Question -08
 
-function convertTime() {
-  var inputTime = document.getElementById("time").value;
-  var hour = parseInt(inputTime.substring(0, 2));
-  var minute = inputTime.substring(2);
-  var convertedHour;
-  var ampm;
+// function convertTime() {
+//   var inputTime = document.getElementById("time").value;
+//   var hour = parseInt(inputTime.substring(0, 2));
+//   var minute = inputTime.substring(2);
+//   var convertedHour;
+//   var ampm;
 
-  if (hour === 0) {
-    convertedHour = 12;
-    ampm = "AM";
-  } else if (hour < 12) {
-    convertedHour = hour;
-    ampm = "AM";
-  } else if (hour === 12) {
-    convertedHour = 12;
-    ampm = "PM";
-  } else {
-    convertedHour = hour - 12;
-    ampm = "PM";
-  }
+//   if (hour === 0) {
+//     convertedHour = 12;
+//     ampm = "AM";
+//   } else if (hour < 12) {
+//     convertedHour = hour;
+//     ampm = "AM";
+//   } else if (hour === 12) {
+//     convertedHour = 12;
+//     ampm = "PM";
+//   } else {
+//     convertedHour = hour - 12;
+//     ampm = "PM";
+//   }
 
-  var convertedTime = convertedHour + ":" + minute + " " + ampm;
-  document.getElementById("convertedTime").innerText =
-    "Converted Time: " + convertedTime;
-}
+//   var convertedTime = convertedHour + ":" + minute + " " + ampm;
+//   document.getElementById("convertedTime").innerText =
+//     "Converted Time: " + convertedTime;
+// }
+
+// Questions -09
+
+// function checkLeapYear() {
+//   var year = parseInt(document.getElementById("yearInput").value);
+//   var isLeapYear = (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+
+//   if (isLeapYear) {
+//     document.getElementById("result").innerText = year + " is a leap year.";
+//   } else {
+//     document.getElementById("result").innerText = year + " is not a leap year.";
+//   }
+// }
+
+// Question -10
+// var correctPassword = "abc123";
+
+// function validatePassword() {
+//   var enteredPassword = document.getElementById("passwordInput").value;
+
+//   if (enteredPassword === "") {
+//     document.getElementById("message").innerText = "Please enter your password";
+//   } else {
+//     if (enteredPassword === correctPassword) {
+//       document.getElementById("message").innerText =
+//         "Correct! The password you entered matches the original password";
+//     } else {
+//       document.getElementById("message").innerText = "Incorrect password";
+//     }
+//   }
+// }
+
+// Question -11
+// function checkName() {
+//   var firstName = "Ali";
+//   var greetingElement = document.getElementById("greeting");
+
+//   if (firstName === "Fahad") {
+//     greetingElement.textContent = "Hello Fahad!";
+//   } else {
+//     greetingElement.textContent = "You are not Fahad";
+//   }
+// }
+
+// Question -12
