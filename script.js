@@ -14,7 +14,7 @@
 //     document.getElementById("checkButton").addEventListener("click", function() {
 //         var number = parseInt(document.getElementById("inputNumber-2").value);
 //         var resultMessage = document.getElementById("result-2");
-    
+
 //         if (number % 2 === 0) {
 //             resultMessage.textContent = "The number is even";
 //         } else {
@@ -39,18 +39,37 @@
 
 // function checkName() {
 //     var name = document.getElementById("nameInput").value;
-  
+
 //     if (name === "IzhanAyaz") {
 
 //       alert("Hello, it's you!");
 //     }
 //   }
 
-  //Question -05
+//Question -05
 
-  
-  
+// function checkDivisibility() {
+//   var number = document.getElementById("number").value;
+//   number = parseInt(number);
+//   if (number % 3 === 0) {
+//     alert("Number is divisible by 3");
+//   } else {
+//     alert("Number is not divisible by 3");
+//   }
+// }
 
+//question -06
 
+// function checkCharacter() {
+//   var character = document.getElementById("charInput").value;
 
-    
+//   if (!isNaN(character)) {
+//     alert("Input is a number");
+//   } else if (character === character.toUpperCase()) {
+//     alert("Input is an uppercase letter");
+//   } else if (character === character.toLowerCase()) {
+//     alert("Input is a lowercase letter");
+//   } else {
+//     alert("Input is neither a number nor a letter");
+//   }
+// }
