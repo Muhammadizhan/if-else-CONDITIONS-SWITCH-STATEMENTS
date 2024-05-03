@@ -73,3 +73,60 @@
 //     alert("Input is neither a number nor a letter");
 //   }
 // }
+
+// Question -07
+// function calculate() {
+//   var num1 = parseFloat(document.getElementById("num1").value);
+//   var num2 = parseFloat(document.getElementById("num2").value);
+//   var operator = document.getElementById("operator").value;
+//   var result;
+
+//   switch (operator) {
+//     case "+":
+//       result = num1 + num2;
+//       break;
+//     case "-":
+//       result = num1 - num2;
+//       break;
+//     case "*":
+//       result = num1 * num2;
+//       break;
+//     case "/":
+//       result = num1 / num2;
+//       break;
+//     case "%":
+//       result = num1 % num2;
+//       break;
+//     default:
+//       result = "Invalid operator";
+//   }
+
+//   document.getElementById("result").innerHTML = result;
+// }
+// Question -08
+
+function convertTime() {
+  var inputTime = document.getElementById("time").value;
+  var hour = parseInt(inputTime.substring(0, 2));
+  var minute = inputTime.substring(2);
+  var convertedHour;
+  var ampm;
+
+  if (hour === 0) {
+    convertedHour = 12;
+    ampm = "AM";
+  } else if (hour < 12) {
+    convertedHour = hour;
+    ampm = "AM";
+  } else if (hour === 12) {
+    convertedHour = 12;
+    ampm = "PM";
+  } else {
+    convertedHour = hour - 12;
+    ampm = "PM";
+  }
+
+  var convertedTime = convertedHour + ":" + minute + " " + ampm;
+  document.getElementById("convertedTime").innerText =
+    "Converted Time: " + convertedTime;
+}
